@@ -16,19 +16,20 @@
        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
        rel="stylesheet"
      />
+         <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo">Tienda <span>Muebles</span></h1>
-      </header>
+  <header class="header-principal">
+    <img src="./img/Electro-Innovadores.png" alt="logo de la empresa">
+      <h1 class="titulo">Connect 3</h1>
+    </header>
       <div class="contenedor-navegacion">
         <nav class="nav-principal contenedor">
           <a href="./index.html">Inicio</a>
           <a href="./nosotros.html">Nosotros</a>
           <a href="./tienda.html">Tienda</a>
-          <a href="./blog.html">Blog</a>
-          <a href="./galeria.html">Galeria</a>
-          <a href="./contacto.html">Contacto</a>
+          <a class="activo" href="./contacto.html">Contacto</a>
         </nav>
       </div>
       <main class="contenido-principal contenedor">
@@ -58,21 +59,6 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend>País</legend>
-                <div class="campo">
-                    <label for="pais">País</label>
-                    <select id="pais">
-                        <option value="" disabled>--Seleccionar--</option>
-                        <option value="MX">Mexico</option>
-                        <option value="CR" selected>Costa Rica</option>
-                        <option value="AR">Angentina</option>
-                        <option value="CO">Colombia</option>
-                        <option value="CL">Chile</option>
-                        <option value="ES">España</option>
-                    </select>
-                </div>
-            </fieldset>
-            <fieldset>
                 <legend>Información Extra</legend>
                 <div class="campo">
                     <label for="cliente">Cliente</label>
@@ -86,11 +72,9 @@
                     <label for="categoria">Categoria de interes</label>
                     <input list="categorias" name="categorias">
                     <datalist id="categorias">
-                        <option value="Cocina">
-                        <option value="Exterior">
-                        <option value="Recamaras">
-                        <option value="Oficina">
-                        <option value="Television">
+                        <option value="Instalación">
+                        <option value="Monitoreo">
+                        <option value="Tercera Edad">
                     </datalist>
                 </div>
             </fieldset>
@@ -100,35 +84,39 @@
       <footer class="site-footer">
         <div class="grid-footer contenedor">
             <div>
-              <h3>Cantegorias</h3>
+              <h3>Categorías</h3>
               <nav class="footer-menu">
-                <a href="#">Cocina</a>
-                <a href="#">Oficina</a>
-                <a href="#">Jardin</a>
-                <a href="#">Cochera</a>
-                <a href="#">Dormitorios</a>
+                <a href="#">Instalación</a>
+                <a href="#">Monitoreo</a>
+                <a href="#">Tercera Edad</a>
               </nav>
             </div>
             <div>
-              <h3>Sobre Nosotros</h3>
+              <h3>Nosotros</h3>
               <nav class="footer-menu">
                 <a href="#">Nuestra Historia</a>
-                <a href="#">Mision, Vision y Valores</a>
-                <a href="#">Carreras</a>
-                <a href="#">Politica de Privacidad</a>
-                <a href="#">Terminos de Servicio</a>
+                <a href="#">Misión</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
               </nav>
             </div>
             <div>
               <h3>Soporte</h3>
               <nav class="footer-menu">
                 <a href="#">Preguntas Frecuentes</a>
-                <a href="#">Ayuda en Linea</a>
-                <a href="#">Confianza y Seguridad</a>
+                <a href="./contacto.html">Contáctanos</a>
+              </nav>
+            </div>
+            <div>
+              <h3>Redes Sociales</h3>
+              <nav class="footer-menu">
+                <a href="#"><i class="bi bi-facebook"></i>Facebook</a>
+                <a href="#"><i class="bi bi-instagram"></i>Instagram</a>
+                <a href="#"><i class="bi bi-twitter"></i>Twitter</a>
               </nav>
             </div>
         </div>
-      <p class="copyright text-center">Todos los derechos Reservador, <strong>TiendaMuebles</strong></p>
+      <p class="copyright text-center">Todos los derechos Reservados, <strong>&copy; Connect 3</strong></p>
     </footer>
 </body>
 </html>
